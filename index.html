@@ -1,0 +1,283 @@
+ <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="inde.js"></script>
+    <style>
+
+    html{
+      scroll-behavior:  smooth;
+    }
+    .carimg{
+      border-radius: 25px;
+    }
+
+     @media screen and (max-width: 750px) {
+       .logopa{
+         width: 200px;
+         height: auto;
+       }
+     }
+
+     @media screen and (min-width: 890px){
+       #query{
+         margin-left: 8%;
+       }
+     }
+     .menu{
+       transition: background 0.8s;
+     }
+     .menu:hover{
+       background-color: #F7455B;
+     }
+
+     @media screen and (min-width: 810px){
+       .menu{
+         margin-left: 20px;
+       }
+     }
+
+     @media screen and (max-width: 600px){
+       .langu{
+         width:390px;
+         height: auto;
+       }
+     }
+
+     @media screen and (max-width: 600px){
+       .myimgg{
+         width: 390px;
+         height: auto;
+       }
+     }
+
+     .uprigt{
+       position: fixed;
+       bottom: 10px;
+       right: 10px;
+     }
+     #scroll{
+       display: none;
+     }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+      <div class="navbar-header">
+       <img class="logopa" src="LOGO.png" style="padding-top: 15px;">
+      </div>
+       <ul id="query" class="nav navbar-nav" style="margin-top: 50px;">
+         <li class="active"><a href="#">MENU<span class="caret"></span></a></li>
+         <li class="menu"><a href="#">HOME</a></li>
+         <li class="menu" onclick="work()"><a>GET NOW</a></li>
+         <li class="menu" onclick="cont()"><a>CONTACT</a></li>
+         <li class="menu" onclick="about()"><a>ABOUT ME</a></li>
+       </ul>
+     </div>
+    </nav>
+    <br>
+    <center>
+      <h2> <b>TIWARI Freelance Web Developers & designers</b> </h2>
+     <h4> freelance web developer,develop not only eye-catching responsive websites,
+       they perform good in search engines too.
+    </h4>
+  </center>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-3" style="border-radius: 50px;">
+          <hr>
+          <form id="getnow" name = "responsee">
+              <h2 style="background-color: #FF8191; border-top-left-radius: 10px; border-top-right-radius: 10px;">Fill This form to Mail me. and<br> GET IT NOW</h2>
+            <div class="form-group">
+              <label for="Name">Name:</label>
+              <input class="form-control" type="text"  name = "usernam" id = "userhai" style="height: 40px;">
+            </div>
+
+            <div class="form-group">
+              <label for="Email">Email:</label>
+              <input class="form-control" type="email" name = "mail" style="height: 50px;">
+            </div>
+
+            <div class="form-group">
+              <label for="sub">Subject:</label>
+              <input class="form-control"  name = "subjectt" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="description">description:</label>
+              <input class="form-control" type="text" placeholder="(message)"  style="height: 200px; width:320px;">
+            </div>
+
+             <button id="mail" class="btn btn-lg" style="background-color: #FF8191; width: 80%; " onclick = "notsub()">submit</button>
+
+          </form>
+
+        </div>
+        <div class="col-sm-1" style="">
+        </div>
+
+        <div class="col-sm-7"style="">
+          <div style="width: 100%;">
+            <center>
+              <hr>
+              <div>
+                <img src="phone.png">
+              </div>
+              <div>
+                <h4><b>Responsive web design and layouts compatible in all devices</b></h4>
+              </div><hr>
+
+              <div>
+                <img src="monitor.png">
+              </div>
+              <div>
+                <h4><b>User friendly content easily accessible and very interactive </b></h4>
+              </div><hr>
+
+              <div>
+                <img src="server.png">
+              </div>
+              <div>
+                <h4><b>Complete serverside scripting / backend support  </b></h4>
+              </div><hr>
+
+              <div>
+                <img src="support.png">
+              </div>
+              <div>
+                <h4><b>24 hours help and support </b></h4>
+              </div><hr>
+
+              <div>
+                <img src="handshake.png">
+              </div>
+              <div>
+                <h4><b> Websites designes according to client need , Client satisfaction is our first priority. </b></h4>
+              </div>
+            </center>
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <hr>
+      <div class="container">
+       <div class="row">
+         <div class="col-sm-4" id="me">
+           <h1><b>Shivang Tiwari, Btech. 3rd year</b></h1><h3><b>(Dr. A.P.J. Abdul Kalam Technical University).</b></h3>
+           <br>
+           <p style="line-height: 250%; font-size: 15px;"><b>
+             If you are looking forward to having a freelance website designer, who
+             specializes in making attractive, user-friendly websites .as well as increase organic traffic.
+             Then I am the right person,Till today I have successfully completed several projects for local clients.
+             I am proficient in producing promptly responsive and user-friendly websites
+             which are not only beautiful but increases your business revenue.
+             I have made small to big websites for all types of startups.
+           </b>
+           </p>
+         </div>
+         <div class="col-sm-2">
+         </div>
+           <img src="mypic.png" class="myimgg">
+       </div>
+     </div>
+     <hr>
+     <div class="uprigt">
+       <a href="#"><img src="upward.png" id="scroll"></a>
+     </div>
+     <center>
+       <h1>Work is Here</h1>
+    <div class="container">
+      <div class="carousel slide" id="cara" data-ride="carousel" style="border-radius: 20px; border: 2px solid #A7A7A7; width: 57%; box-shadow: 2px 5px 8px black;">
+         <hr>
+        <div class="carousel-inner">
+         <div class="item active">
+           <img src="frst.jpg" class="carimg">
+         </div>
+         <div class="item" class="carimg">
+           <img src="seco.jpg">
+         </div>
+         <div class="item" class="carimg">
+           <img src="thir.jpg">
+         </div>
+         <div class="item" class="carimg">
+           <img src="for.jpg">
+         </div>
+         <div class="item" class="carimg">
+           <img src="fiv.jpg">
+         </div>
+      </div>
+      <hr>
+      <ol class="carousel-indicators">
+        <li data-target="#cara" data-slide-to="0" class="active" style="background-color: black;"></li>
+        <li data-target="#cara" data-slide-to="1" style="background-color: black;"></li>
+        <li data-target="#cara" data-slide-to="2" style="background-color: black;"></li>
+        <li data-target="#cara" data-slide-to="3" style="background-color: black;"></li>
+        <li data-target="#cara" data-slide-to="4" style="background-color: black;"></li>
+      </ol>
+    </div>
+  </div>
+</center>
+<br>
+<center>
+<a href="https://www.blogger.com/profile/08978572125138786021">
+    <img src="user.gif">
+    <h3><font color="#4AE800"><b>Shivang Tiwari</b></font></h3>
+</a>
+<br><br>
+  <div class="container">
+    <img src="ALLLAN.png" class = "langu">
+  </div>
+</center>
+  <div class=container style="box-shadow: 2px 5px 8px black;">
+    <font size="50px">TIWARI</font><small>Web developers.</small>
+    <br>
+    <h3>LINKS&nbsp;<span class="glyphicon glyphicon-menu-down"></span></h3>
+    <div style="background-color: ; border-radius: 10px; border-left: 1px solid #A9A9A9; border-top: 1px solid #A9A9A9;">
+      <ul>
+        <li><a href="#" style=" padding: 5px;">HOME</a></li>
+        <li onclick="work()" style="padding: 5px;"><a>GET NOW</a></li>
+        <li onclick="contact()" style=" padding: 5px;"><a>CONTACT</a></li>
+        <li onclick="about()" style=" padding: 5px;"><a>ABOUT ME</a></li>
+      </ul>
+    </div>
+    <br>
+  </div>
+    <div class="container">
+      <h2>CONTACT</h2>
+      <div class="row" id="c">
+        <div class="col-sm-4">
+          <h4>Social </h4>
+          <a href="https://www.facebook.com/tiwari.shivangg"><img style="" src="facebook.png"></a>
+          <a href="https://www.instagram.com/shivang424/?hl=en"><img style=" padding-left: 20px;" src="instagram.png"></a>
+          <a href="https://www.linkedin.com/in/shivang-tiwari-b21346218/"><img style=" padding-left: 20px;" src="linkedin.png"></a>
+          <a href="https://twitter.com/Shivang67378852"><img style=" padding-left: 20px;" src="twitter.png"></a>
+        </div>
+        <div class="col-sm-3">
+          <h4>Contact info</h4>
+          <h5><span class="glyphicon glyphicon-map-marker"></span> Delhi,Delhi-110032</h5>
+          <h5><span class="glyphicon glyphicon-envelope"></span> Email: shubh9910tiwari@gmail.com</h5>
+        </div>
+    </div>
+  </div>
+  <hr>
+  <center>
+  <div style="background-color: #525252; color: white;">
+    <br>
+    <h5>&copy; Copywrite TIWARI WEBDEVELOPERS All Rights Reserved</h5><h5>Developed by SHIVANG TIWARI.</h5>
+    <br>
+  </div>
+  </center>
+  </body>
+</html>
